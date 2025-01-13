@@ -1,0 +1,44 @@
+# What have I learned?
+
+    I learned how to use JavaScript to make my webpage interactive.
+    I learned about DOMContentLoaded to make sure my script runs after the page loads.
+    I used sliders and buttons to take input from users and update things on the page.
+
+# What have I implemented?
+
+    A tip calculator that:
+        Updates the number of people when I move the slider.
+        Resets everything with a reset button.
+        Checks if the user entered the right data before doing the math.
+
+# What went wrong?
+
+    I need to show the final tip and total on the webpage.
+    I need add errors, like what happens if there are zero people.
+
+# What went well?
+
+    The slider works, and the number of people updates on the screen.
+    The error messages make sense and help the user fix problems.
+
+# Questions I have now or things i could do
+
+    How can I make sure the webpage works well for people using keyboards or other tools?
+    What can I do to make the form look good on phones?
+    How do I handle weird cases, like someone entering really big or small numbers?
+
+# Resources I used:
+
+    Calculator.net: Looked at their HTML structure and changed their CSS for practice.
+    W3Schools - HTML Tags: Used to learn more about HTML elements.
+    MDN - JavaScript: Helped me understand JavaScript better.
+
+# Future Goals:
+
+    Fix the tip and total so they show up after calculations.
+    Test for errors, like dividing by zero or missing inputs.
+    Add small tests to make sure my calculations are always correct.
+
+ANY NICHE PAIN POINTS!!!!!!
+
+Not yet

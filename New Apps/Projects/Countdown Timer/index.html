@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div class="countdown-timer-container">
+
+        <!-- Header Section -->
+        <header class="countdown-header">
+            <h1>Event Countdown Timer</h1>
+            <p>Countdown to your chosen event!</p>
+        </header>
+
+        <!-- Timer Display Section -->
+        <div class="timer-display">
+            <div class="time-box">
+                <span class="time-value" id="days-value">0</span>
+                <span class="days-label">Days</span>
+            </div>
+            <div class="time-box">
+                <span class="time-value" id="hours-value">0</span>
+                <span class="hours-label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span class="time-value" id="minutes-value">0</span>
+                <span class="minutes-label">Minutes</span>
+            </div>
+            <div class="time-box">
+                <span class="time-value" id="seconds-value">0</span>
+                <span class="seconds-label">Seconds</span>
+            </div>
+        </div>
+
+        <!-- Input Section for Custom Event -->
+        <div class="timer-input-section">
+            <label for="event-date">Set Event Date:</label>
+            <input type="date" id="event-date" />
+            <label for="event-time">Set Event Time:</label>
+            <input type="time" id="event-time" />
+            <button id="start-timer">Start Countdown</button>
+        </div>
+
+        <!-- Message Section -->
+        <div class="timer-completion-message">
+            <p>The event has started!</p>
+        </div>
+
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Wrapper */
+  .countdown-timer-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Timer Display */
+  .timer-display {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+  }
+  
+  .time-value {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .time-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #777;
+  }
+  
+  /* Input Section */
+  .timer-input-section {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjust for padding */
+  }
+  
+  #start-timer {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #start-timer:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Message Section */
+  .timer-completion-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #a3552f;
+    display: none; /* Hidden by default, show it dynamically with JavaScript */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .time-box {
+      width: 80px;
+    }
+  
+    .time-value {
+      font-size: 1.5rem;
+    }
+  }

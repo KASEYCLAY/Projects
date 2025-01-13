@@ -1,0 +1,129 @@
+/* Reset defaults */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ 
+/* Layout and colour scheme */
+ 
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+ 
+ 
+/* Main container styling */
+ 
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+ 
+ 
+/* Typography */
+ 
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+ 
+.game-info {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+ 
+ 
+/* Game interface elements */
+ 
+.game-area {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+ 
+ 
+/* Form controls */
+ 
+input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+ 
+input:focus {
+    outline: 2px solid #764ba2;
+    background: #fff;
+}
+ 
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #764ba2;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+ 
+button:hover {
+    background: #667eea;
+    transform: translateY(-1px);
+}
+ 
+button:active {
+    transform: translateY(1px);
+}
+ 
+ 
+/* Feedback and status elements */
+ 
+.message {
+    min-height: 1.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+ 
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+ 
+ 
+/* Utility classes */
+ 
+.hidden {
+    display: none;
+}
+ 
+.success {
+    color: #4ade80;
+    font-weight: 500;
+}
+ 
+.error {
+    color: #f87171;
+    font-weight: 500;
+}
+ 

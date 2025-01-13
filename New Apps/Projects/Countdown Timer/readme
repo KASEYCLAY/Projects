@@ -1,0 +1,26 @@
+# Reflection Time!
+### What have I learned?
+understaning of how to getDate/Time data console log and also DOM element to display the stactic countdown date.
+### What have I implemented?
+So far i have implemented the function to pull ducrrent date and time with a static target date.
+### What went wrong?
+I am struggling with understanding how to set a dynamic date and time along with the use of the button, I somehpome have the reference error and the endDate is not defined i need to work out how to fix this before.
+### What went well?
+Understanding of the time but need to work on DOM elements
+### Questions I have now:
+script.js:11 Uncaught ReferenceError: endDate is not defined
+    at countdown (script.js:11:24)
+    at HTMLButtonElement.<anonymous> (script.js:56:7)
+    Im sturggling with the definition its not working!!!!!!!
+### Resources I used: 
+MDN, [WE3Schools](https://www.w3schools.com/js/js_htmldom.asp), Stack Overflow.
+https://blog.adrienne.io/a-countdown-timer-in-pure-javascript
+### Future Goals:
+Gain better understanding of DOM elements and understaning of how to grab them and use them.
+
+### ANY NICHE PAIN POINTS!!!!!!
+
+
+------------------------------------------------------------
+FEEDBACK FROM KYLE
+------------------------------------------------------------

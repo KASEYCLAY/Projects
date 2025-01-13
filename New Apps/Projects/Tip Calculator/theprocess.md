@@ -13,7 +13,6 @@ This guide outlines what I did to successfully implement a tip calculator using 
 1.3. I added a new CSS file (e.g., `style.css`) to style the calculator for a polished look.
 
 1.4. I linked it in the HTML:
-
 ```html
 <form id="tip-calculator-form">
     <input id="bill-amount" type="number" placeholder="Enter Bill Amount" />

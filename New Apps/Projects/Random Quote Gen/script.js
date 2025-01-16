@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Event listener for "Don't Push" button (placeholder action)
     donotPushBtn.addEventListener("click", () => {
-      window.location.href = "https://example.com"; // Redirect to a placeholder URL
+      window.location.href = "donotpush.html"; // Redirect to a placeholder URL
     });
   
     // Event listener for pinning a quote (saving to local storage)

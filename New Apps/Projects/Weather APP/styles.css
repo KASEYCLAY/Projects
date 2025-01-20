@@ -1,0 +1,139 @@
+/* styles.css */
+
+/* General Reset */
+body, h1, h2, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #243b55, #141e30); /* Dark gradient */
+    color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  form {
+    margin-top: 15px;
+  }
+  
+  form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+    background: #2c3e50;
+    color: #ffffff;
+  }
+  
+  form input::placeholder {
+    color: #bdc3c7;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #2980b9;
+  }
+  
+  main {
+    margin-top: 20px;
+    text-align: centre;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0.85); /* Dark semi-transparent card */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Current Weather Section */
+  #weather-display h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  #current-weather p {
+    margin: 8px 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Optional: 5-Day Forecast */
+  #forecast {
+    margin-top: 20px;
+  }
+  
+  #forecast h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  #forecast-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  #forecast-container div {
+    background: rgba(52, 73, 94, 0.9); /* Darker forecast cards */
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #forecast-container div:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: auto;
+    text-align: centre;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    font-size: 2.5rem;
+  }
+  
+  footer a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

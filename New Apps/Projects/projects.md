@@ -2,8 +2,8 @@
 
 # Countdown Timer - Build a timer that counts down to a specific event. - Completed
 # Tip Calculator - Calculate the tip based on the bill amount and percentage - Completed
-# Random Quote Generator - Show a random inspirational quote on a button click. - Tasked
-    Weather App (API) - Fetch real-time weather data using a public API.
+# Random Quote Generator - Show a random inspirational quote on a button click. - Completed
+# Weather App (API) - Fetch real-time weather data using a public API. - TASKED
     Palindrome Checker - Check if a user-entered string is a palindrome.
 
 Intermediate Projects

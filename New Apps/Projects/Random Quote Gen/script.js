@@ -32,29 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "You must be the change you wish to see in the world.",
       "Believe you can and you're halfway there."
     ];
-    const authors = [
-      "Oscar Wilde",
-      "Albert Einstein",
-      "Robert Frost",
-      "Mark Twain",
-      "Martin Luther King Jr.",
-      "Oscar Wilde",
-      "Friedrich Nietzsche",
-      "Oscar Wilde",
-      "Stephen Chbosky",
-      "Marilyn Monroe",
-      "George Eliot",
-      "Theodore Roosevelt",
-      "Winston Churchill",
-      "Ralph Waldo Emerson",
-      "Dalai Lama",
-      "Dr. Seuss",
-      "J.R.R. Tolkien",
-      "Steve Jobs",
-      "Mahatma Gandhi",
-      "Theodore Roosevelt"
-    ];
-  
     // Function to fetch and display a new random quote
     function newQuote() {
       const randomIndex = Math.floor(Math.random() * quotes.length); // Generate a random index

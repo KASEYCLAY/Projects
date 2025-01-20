@@ -1,14 +1,14 @@
 // Load content on session start
 document.addEventListener("DOMContentLoaded", () => {
     // DOM elements
-    const searchForCity = document.querySelector("#city-input");
-    const displayWeather = document.querySelector("#weather-display");
-    const locationName = document.querySelector("#location-name");
-    const theTemperature = document.querySelector("#temperature");
-    const theCondition = document.querySelector("#condition");
-    const theHumidity = document.querySelector("#humidity");
-    const theWind = document.querySelector("#wind");
-    const fiveDayForecast = document.querySelector("#forecast-container");
+    const searchForCity = document.querySelector("city-input");
+    const displayWeather = document.querySelector("weather-display");
+    const locationName = document.querySelector("location-name");
+    const theTemperature = document.querySelector("temperature");
+    const theCondition = document.querySelector("condition");
+    const theHumidity = document.querySelector("humidity");
+    const theWind = document.querySelector("wind");
+    const fiveDayForecast = document.querySelector("forecast-container");
   
     // API constants
     const apiKey = "YOUR_API_KEY_HERE"; // Replace with your WeatherAPI key

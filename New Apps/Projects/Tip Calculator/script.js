@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetButton = document.getElementById("reset"); // Button to reset all inputs and outputs to their default states
   const tipPerPersonDisplay = document.getElementById("tip-per-person"); // Display for the calculated tip amount per person
   const totalTipDisplay = document.getElementById("total-tip"); // Display for the total calculated tip amount
+  const SCREAMING_SNAKE = "50" // EXAMPLE OF USING SCREAMING=SNAKE=CASING CONVENTION
 
   // Initialize the display for the number of people with the initial slider value
   peopleValue.textContent = peopleSlider.value; // Sets the default display text to match the slider's current value
@@ -74,3 +75,5 @@ document.addEventListener("DOMContentLoaded", () => {
     tipPerPersonDisplay.textContent = "£0.00"; // Reset per-person tip display
   });
 });
+
+

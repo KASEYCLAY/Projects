@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bazelat Glamping Retreat | Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="huts.html">Our Huts</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero Section -->
+  <header id="booking" style="background-image: url('https://via.placeholder.com/1920x1080?text=Booking');">
+    <div class="header-content">
+      <h1>Book Your Stay</h1>
+      <p>Reserve your perfect glamping experience today</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="booking-form-section">
+      <div class="section-title">
+        <h2>Reservation Form</h2>
+        <p>Fill out the form below to secure your reservation.</p>
+      </div>
+      <div class="booking-form">
+        <form action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          
+          <label for="dates">Check-in & Check-out</label>
+          <input type="text" id="dates" name="dates" placeholder="Select your dates" required>
+          
+          <label for="hut">Choose a Hut</label>
+          <select id="hut" name="hut">
+            <option value="hut1">Hut 1: The Forest Nook</option>
+            <option value="hut2">Hut 2: The Sunlit Retreat</option>
+            <option value="hut3">Hut 3: The Cozy Corner</option>
+            <option value="hut4">Hut 4: The Rustic Charm</option>
+            <option value="hut5">Hut 5: The Serenity Suite</option>
+            <option value="hut6">Hut 6: The Nature's Nest</option>
+            <option value="hut7">Hut 7: The Twilight Escape</option>
+            <option value="hut8">Hut 8: The Dreamy Domicile</option>
+            <option value="hut9">Hut 9: The Hidden Haven</option>
+          </select>
+          
+          <label for="message">Special Requests</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any additional information..."></textarea>
+          
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bazelat Glamping Retreat. All rights reserved.</p>
+  </footer>
+</body>
+</html>

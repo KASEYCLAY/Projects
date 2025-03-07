@@ -1,0 +1,334 @@
+/* style.css - Next Level Fancy & Shadcn-Inspired CSS */
+
+/* Variables */
+:root {
+  --primary: #1e293b; /* slate-800 */
+  --secondary: #0f172a; /* slate-900 */
+  --accent: #facc15; /* amber-400 */
+  --bg: #f8fafc; /* slate-50 */
+  --text: #1e293b; /* slate-800 */
+  --link: #3b82f6; /* blue-500 */
+  --link-hover: #2563eb; /* blue-600 */
+  --border: #e2e8f0; /* slate-200 */
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--secondary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1.5rem;
+}
+nav a {
+  color: var(--bg);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+nav a:hover::after,
+nav a.active::after {
+  transform: scaleX(1);
+}
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+}
+
+/* Header / Hero Section */
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  z-index: 0;
+  animation: fadeIn 2s ease forwards;
+}
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1rem;
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
+.header-content h1 {
+  font-size: 3.5rem;
+  color: var(--bg);
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.header-content p {
+  font-size: 1.25rem;
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 1rem;
+}
+.section-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+.section-title p {
+  font-size: 1rem;
+  color: var(--secondary);
+}
+
+/* Glamping Huts Grid */
+.huts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.hut {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.hut:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+.hut img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.hut:hover img {
+  transform: scale(1.05);
+}
+.hut-content {
+  padding: 1rem;
+}
+.hut-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+.hut-content p {
+  font-size: 0.95rem;
+  color: var(--secondary);
+}
+
+/* Amenities Section */
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.amenity {
+  flex: 1 1 150px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.amenity:hover {
+  transform: translateY(-4px);
+}
+.amenity img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+.amenity h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+  color: var(--primary);
+}
+.amenity p {
+  font-size: 0.875rem;
+  color: var(--secondary);
+}
+
+/* Booking Form */
+.booking-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.booking-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.booking-form input,
+.booking-form textarea,
+.booking-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.booking-form input:focus,
+.booking-form textarea:focus,
+.booking-form select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.3);
+}
+.booking-form button {
+  background: var(--secondary);
+  color: var(--bg);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.booking-form button:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Footer */
+footer {
+  background: var(--secondary);
+  color: var(--bg);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 -2px 6px var(--shadow);
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--link-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5rem 0;
+  }
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+}
